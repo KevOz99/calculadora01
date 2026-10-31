@@ -1,12 +1,19 @@
-#calculadora.py
+# calculadora.py
 
-def sumar(a,b):
-    return a+b
+def sumar(a, b):
+    return a + b
 
-if __name__== "_main_":
-    num1 = float(input("Ingresa el primer numero: "))
-    num2 = float(input("Ingrese el segundo numero: "))
+def restar(a, b):
+    return a - b
 
-    resultado = sumar(num1+num2)
-    print(f"EL RESULTADO DE LA SUMA ES: {resultado} ")
+if __name__ == "__main__":
+    num1 = float(input("Ingrese el primer número: "))
+    num2 = float(input("Ingrese el segundo número: "))
+
+    resultado_suma = sumar(num1, num2)
+    resultado_resta = restar(num1, num2)
+
+    print(f"El resultado de la suma es: {resultado_suma}")
+    print(f"El resultado de la resta es: {resultado_resta}")
+
      
